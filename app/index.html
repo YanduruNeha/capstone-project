@@ -1,11 +1,316 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps Capstone Project</title>
 
-<html>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Times New Roman', serif;
+}
+
+body{
+    background:linear-gradient(135deg,#2c003e,#4a148c,#1a237e);
+    color:white;
+    text-align:center;
+}
+
+.container{
+    padding:30px;
+}
+
+h1{
+    font-size:70px;
+    color:#00e5ff;
+    margin-bottom:20px;
+    text-shadow:0 0 15px rgba(0,229,255,0.7);
+}
+
+.success{
+    font-size:45px;
+    color:#7CFC00;
+    font-weight:bold;
+    margin-top:20px;
+}
+
+.description{
+    font-size:28px;
+    width:85%;
+    margin:30px auto;
+    line-height:1.6;
+}
+
+.pipeline{
+    width:90%;
+    margin:40px auto;
+    background:rgba(255,255,255,0.08);
+    border:2px solid #00e5ff;
+    padding:30px;
+    border-radius:20px;
+    font-size:26px;
+    font-weight:bold;
+    line-height:1.5;
+    box-shadow:0 0 20px rgba(0,229,255,0.2);
+}
+
+.architecture{
+    width:95%;
+    margin:50px auto;
+}
+
+.architecture h2{
+    color:#00e5ff;
+    font-size:45px;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    border-left:5px solid #00e5ff;
+    border-radius:18px;
+    padding:25px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:rgba(0,229,255,0.15);
+}
+
+.card h3{
+    color:#7CFC00;
+    margin-bottom:12px;
+    font-size:24px;
+}
+
+.card p{
+    font-size:18px;
+    line-height:1.6;
+}
+
+.statistics{
+    width:95%;
+    margin:60px auto;
+}
+
+.statistics h2{
+    color:#00e5ff;
+    font-size:45px;
+    margin-bottom:30px;
+}
+
+.stats-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.stats-card{
+    background:rgba(255,255,255,0.08);
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 0 20px rgba(0,229,255,0.15);
+}
+
+.stats-card h3{
+    font-size:55px;
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+.stats-card p{
+    font-size:22px;
+    line-height:1.5;
+}
+
+.creator{
+    margin-top:60px;
+    border-top:1px solid rgba(255,255,255,0.2);
+    padding-top:30px;
+    text-align:center;
+}
+
+.creator h3{
+    font-size:30px;
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+.creator p{
+    font-size:22px;
+    color:#00e5ff;
+}
+
+
+.footer{
+    margin-top:50px;
+    padding:20px;
+    font-size:18px;
+    color:#dcdcdc;
+}
+
+
+.workflow-heading{
+    color:#00e5ff;
+    font-size:45px;
+    margin-top:40px;
+    margin-bottom:20px;
+}
+</style>
+</head>
 
 <body>
 
-<h1>Capstone Project Deployment Successful</h1>
-<h1>Test pipeline</h1>
-</body>
+<div class="container">
 
+<h1>🚀 DevOps Capstone Project</h1>
+
+<div class="success">
+✅ Application Deployment Successful
+</div>
+
+
+<div class="description">
+🚀 Infrastructure Provisioned with Terraform |
+⚙️ CI/CD Automated using GitHub Actions |
+☸️ Application Deployed on Amazon EKS |
+🔥 Monitoring Enabled with Prometheus |
+📊 Visualization & Alerting using Grafana
+</div>
+
+
+<h2 class="workflow-heading">🔄 DevOps Workflow</h2>
+
+
+<div class="pipeline">
+
+💻 Source Code → GitHub Repository → GitHub Actions CI/CD →
+🐳 Docker Build → 📦 Amazon ECR →
+☸️ Amazon EKS → 🌍 Production Deployment →
+🔥 Prometheus Monitoring →
+📊 Grafana Dashboard & Alerting
+
+</div>
+
+<div class="architecture">
+
+<h2>🛠️ Technology Stack</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>☁️ AWS Cloud</h3>
+<p>
+Provides secure, scalable, and highly available cloud infrastructure for hosting application workloads.
+</p>
+</div>
+
+<div class="card">
+<h3>🏗️ Terraform</h3>
+<p>
+Automates infrastructure provisioning using Infrastructure as Code principles and reusable modules.
+</p>
+</div>
+
+<div class="card">
+<h3>☸️ Amazon EKS</h3>
+<p>
+Manages Kubernetes clusters and orchestrates containerized applications efficiently.
+</p>
+</div>
+
+<div class="card">
+<h3>🐳 Docker</h3>
+<p>
+Packages the application and dependencies into portable container images.
+</p>
+</div>
+
+<div class="card">
+<h3>📦 Amazon ECR</h3>
+<p>
+Stores and manages version-controlled Docker images securely in AWS.
+</p>
+</div>
+
+<div class="card">
+<h3>🐙 GitHub</h3>
+<p>
+Maintains source code repositories and enables collaborative version control.
+</p>
+</div>
+
+<div class="card">
+<h3>⚙️ GitHub Actions</h3>
+<p>
+Automates build, test, image creation, and deployment workflows without manual intervention.
+</p>
+</div>
+
+<div class="card">
+<h3>🔥 Prometheus</h3>
+<p>
+Collects real-time infrastructure and Kubernetes metrics for monitoring purposes.
+</p>
+</div>
+
+<div class="card">
+<h3>📊 Grafana</h3>
+<p>
+Visualizes metrics through dashboards and generates alerts for proactive monitoring.
+</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="statistics">
+
+    <h2>📊 Project Statistics</h2>
+
+    <div class="stats-cards">
+
+        <div class="stats-card">
+            <h3>10+</h3>
+            <p>Technologies Used</p>
+        </div>
+
+        <div class="stats-card">
+            <h3>100%</h3>
+            <p>Infrastructure Automation</p>
+        </div>
+
+        <div class="stats-card">
+            <h3>1</h3>
+            <p>Complete CI/CD Pipeline</p>
+        </div>
+
+        <div class="stats-card">
+            <h3>24/7</h3>
+            <p>Application Monitoring</p>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="creator">
+    <h3>Created by <strong>Yanduru Neha</strong></h3>
+    <p>Graduate Engineer Trainee | 52359976</p>
+</div>
+
+</div>
+
+</body>
 </html>
